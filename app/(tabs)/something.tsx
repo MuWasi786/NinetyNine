@@ -11,7 +11,6 @@ import { useRouter } from "expo-router";
 
 const { width } = Dimensions.get('window');
 
-
 const Something = () => {
     const router = useRouter();
 

@@ -1,7 +1,6 @@
 {
   "expo": {
     "sdkVersion": "53.0.0",
-    "newArchEnabled": false,
     "name": "ninetynine",
     "slug": "react_native_99",
     "version": "1.0.0",
