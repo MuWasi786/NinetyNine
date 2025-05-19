@@ -2,14 +2,21 @@ import { Image, View, Text, ImageBackground, StyleSheet, Pressable } from 'react
 import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
 import starImage from "@/assets/images/BACKGROUND.png";
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView } from 'react-native-safe-area-context'; //keeps content in screen boundaries 
 import CustomButton from "@/components/CustomButton";
 import logoImage from "@/assets/images/KnowYourLordLogo.png";
 import { useRouter } from 'expo-router';
-import HadithImage from '@/assets/images/Hadith99.png';
+import HadithImage from '@/assets/images/Hadith99.png'; //@ simplifies paths
 
-const App = () => {
-  const router = useRouter();
+// In react, we have these things like components, 
+// where we do const ___ = () => {
+//                here we add logic
+//                       return (
+//                           and here we had JSX, the layout);};
+
+
+const App = () => { //basically, the screen component
+  const router = useRouter(); //allows for swapping screens
 
   return (
     <View style={styles.container}>
@@ -57,7 +64,7 @@ const App = () => {
   );
 };
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({  //styling
   container: {
     flex: 1,
   },

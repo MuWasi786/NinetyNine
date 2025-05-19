@@ -8,21 +8,23 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import audioMapping from '@/constants/audioMapping';
 import whiteback from '@/assets/images/whiteback.png';
 
-
+//consts are defining functional components 
 const NameDetails = () => {
-    const { id } = useLocalSearchParams();
-    const router = useRouter(); // Add this line - it was missing!
-    const numericId = Number(id); // Convert to number
-    const topic = topics.find(item => item.id === numericId); // Use strict equality
+    const { id } = useLocalSearchParams(); // get dynamic route parameter
+    const router = useRouter(); // for navigation
+    const numericId = Number(id); // Convert route param to number 
+    const topic = topics.find(item => item.id === numericId); // To find topic object
 
-    if (!topic) {
+    if (!topic) { //in case you can't find topic
         return (
             <View style={styles.container}>
                 <Text style={styles.error}>Topic not found.</Text>
             </View>
         );
     }
-   
+    
+
+    //Here's the audio setup!
     const [sound, setSound] = useState();
 
     // Set up audio mode when component mounts
@@ -30,7 +32,7 @@ const NameDetails = () => {
         const setupAudio = async () => {
             try {
                 await Audio.setAudioModeAsync({
-                    playsInSilentModeIOS: true,
+                    playsInSilentModeIOS: true,  //if phone silent, still play
                     shouldDuckAndroid: true,
                     staysActiveInBackground: false,
                 });
@@ -51,6 +53,9 @@ const NameDetails = () => {
             : undefined;
     }, [sound]);
 
+
+
+    //This function plays the sound!
     const playSound = async () => {
         console.log('Current id:', id);
         console.log('Numeric id:', numericId);
@@ -69,7 +74,7 @@ const NameDetails = () => {
         try {
             // Unload existing sound if any
             if (sound) {
-                await sound.unloadAsync();
+                await sound.unloadAsync();  //unload the old sound
                 setSound(undefined);
             }
 
@@ -85,8 +90,11 @@ const NameDetails = () => {
     };
    
     const iconSource = iconMapping[id] || iconMapping[numericId] || null;
+    //finds the corresponding image/icon from the name 
+    // || is basically find this OR this OR null ie error
 
     return (
+        //this is all the ui
         <ImageBackground
             source={whiteback}
             style={styles.background}

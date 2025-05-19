@@ -10,7 +10,7 @@
     "scheme": [
       "ninetynine"
     ],
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/images/KnowYourLordIcon.png",
       "resizeMode": "contain",

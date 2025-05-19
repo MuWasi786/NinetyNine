@@ -5,13 +5,14 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { iconMapping } from "@/constants/iconMapping";
 import { Image } from 'react-native';
 
+//component and state initialization
 const ListenAlong = () => {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const [currentIconIndex, setCurrentIconIndex] = useState(1);
-    const [showIcons, setShowIcons] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(false); //controls if audio playing
+    const [currentIconIndex, setCurrentIconIndex] = useState(1); //controls which name is shown
+    const [showIcons, setShowIcons] = useState(false); //controls showing icons
     const videoRef = useRef(null);
-    const soundRef = useRef(null);
-    const intervalRef = useRef(null);
+    const soundRef = useRef(null);  
+    const intervalRef = useRef(null); //icon transition
 
     // Add text content for each icon
     const iconTextMapping = {
@@ -116,32 +117,35 @@ const ListenAlong = () => {
     99: "As-Saboor - The Patient"
 };
 
-    // Get text based on current icon index
+    // Get text based on current icon index from above array
     const getCurrentText = () => {
         return iconTextMapping[currentIconIndex] || "Default text if not found";
     };
 
+    // function to handle playing or pausing audio 
     const handlePlayPauseAudioAndVideo = async () => {
-        if (isPlaying) {
-            await soundRef.current?.pauseAsync();
-            videoRef.current?.pauseAsync();
-            setIsPlaying(false);
+        if (isPlaying) { //if currently playing 
+            await soundRef.current?.pauseAsync(); //pause, wait till finished
+            videoRef.current?.pauseAsync(); //pause videow
+            setIsPlaying(false); //then set to false
             // Don't hide icons or reset position when pausing
             // Just keep the current icon displayed
+
         } else {
-            if (soundRef.current === null) {
+            if (soundRef.current === null) { //if sound not loaded yet 
+
                 const { sound } = await Audio.Sound.createAsync(
-                    require('@/assets/audio/sheesh.mp3'),
-                    { progressUpdateIntervalMillis: 1000 },
-                    onPlaybackStatusUpdate
+                    require('@/assets/audio/sheesh.mp3'), //load file from sheesh
+                    { progressUpdateIntervalMillis: 1000 }, //set update to 1second
+                    onPlaybackStatusUpdate //recieve updates on playback
                 );
-                soundRef.current = sound;
+                soundRef.current = sound; //stores the loaded sound object in soundRef.current
             }
-            await soundRef.current.playAsync();
-            videoRef.current?.playAsync();
-            setIsPlaying(true);
-            setShowIcons(true);
-            startIconTransition();
+            await soundRef.current.playAsync(); //play audio
+            videoRef.current?.playAsync(); //play video
+            setIsPlaying(true);  //update the state to show its playing
+            setShowIcons(true);   //update the icons 
+            startIconTransition();  //now we're calling the function to cycle through the names
         }
     };
 

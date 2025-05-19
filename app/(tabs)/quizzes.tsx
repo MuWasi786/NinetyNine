@@ -6,6 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import MainImage from '@/assets/images/MAINBACKGROUND.png';
 
+// this is an array! holds the unique id of each equiz, image, and the title
 const quizButtons = [
   { id: 1, image: require('@/assets/images/1.png'), title: 'Quiz 1' },
   { id: 2, image: require('@/assets/images/2.png'), title: 'Quiz 2' },
@@ -14,14 +15,17 @@ const quizButtons = [
   { id: 5, image: require('@/assets/images/fullquiz2.png'), title: 'Full Quiz' },
 ];
 
+// Main screen component
 const Quizzes = () => {
   const router = useRouter();
 
+
+  // navigation, takes you to the push 
   const handleQuizPress = (id: number) => {
     router.push(`/(tabs)/quizzesinfo/instructions/${id}`);
   };
 
-  return (
+  return ( //UI!
       <ImageBackground source={MainImage} style={styles.backgroundImage}>
         <LinearGradient
           colors={['#101746', '#142f60', '#17457a', '#1a5a91']}

@@ -1,8 +1,12 @@
 import { Slot, Stack } from 'expo-router';
 
-export default function RootLayout() {
+//This file tells us how to navigate between screens!
+
+export default function RootLayout() { //root layout component, wraps the navigation
     return(
-        <Stack>
+        <Stack> {/* this defines navigable screens */}
+
+            {/* User going to the tabs route, dont show header */}
             <Stack.Screen name="(tabs)" options={{ headerShown: false}}/>
             <Stack.Screen name="index" options={{ headerShown: false}}/>
             <Stack.Screen name="nameDetails/[id]" options={{ headerShown: false }} />
