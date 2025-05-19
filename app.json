@@ -1,24 +1,39 @@
 {
   "expo": {
+    "sdkVersion": "53.0.0",
+    "newArchEnabled": false,
     "name": "ninetynine",
-    "slug": "ninetynine",
+    "slug": "react_native_99",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/images/KnowYourLordIcon.png",
+    "scheme": [
+      "ninetynine"
+    ],
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/KnowYourLordIcon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "ios": {
-      "supportsTablet": true
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app uses the microphone to play audio.",
+        "supportsTablet": true,
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "splash": {
+        "image": "./assets/images/KnowYourLordIcon.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#000000",
+        "tabletImage": "./assets/images/KnowYourLordIcon.png"
+      },
+      "bundleIdentifier": "com.muhammadwasi.ninetynine"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/KnowYourLordIcon.png",
+        "backgroundColor": "#000000"
       }
     },
     "web": {
@@ -27,10 +42,17 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "c41e10b7-cc47-4ae4-bdea-fdec86840b6b"
+      }
     }
   }
 }

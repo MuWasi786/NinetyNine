@@ -1,35 +1,76 @@
+import React from 'react'
 import { Tabs } from 'expo-router';
-import React from 'react';
+import Colors from '@/constants/Colors';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
+export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
-      }}>
+        tabBarActiveTintColor: Colors.test,
+        tabBarInactiveTintColor: Colors.grey,            
+      }}
+    >
       <Tabs.Screen
-        name="index"
+        name="something"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+          tabBarLabel: "Home",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome name="home" size={24} color={color} />
           ),
         }}
       />
+
+      
+
       <Tabs.Screen
-        name="explore"
+        name="testyourself"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+          tabBarLabel: "Flashcards",
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="card-multiple-outline" size={24} color={color} />
           ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="quizzes"
+        options={{
+          tabBarLabel: "Quizzes",
+          tabBarIcon: ({ color }) => (
+            <MaterialIcons name="quiz" size={24} color={color} />
+          ),
+        }}
+      />
+      
+      <Tabs.Screen
+        name="listen"
+        options={{
+          tabBarLabel: "Listen Along",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome name="assistive-listening-systems" size={24} color={color} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="quizzesinfo"
+        options={{
+          href: null,
+          headerShown: false,
+        }}
+      />
+
+      
+
+      <Tabs.Screen
+        name="flashcards"
+        options={{
+          href: null,
+          headerShown: false,
         }}
       />
     </Tabs>
