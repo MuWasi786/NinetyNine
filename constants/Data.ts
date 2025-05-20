@@ -1425,7 +1425,7 @@ export const topics: NameType[] = [
     id: 79,
     name: "Name1",
     title: "Al-Barr",
-    description: "The Absolute Truth",
+    description: "The Doer of Good",
     meaning:
       "Al-Barr signifies Allah’s immense kindness, generosity, and benevolence. He is ever-merciful and bestows countless blessings upon His creation.",
     scholarlyAnalysis:
