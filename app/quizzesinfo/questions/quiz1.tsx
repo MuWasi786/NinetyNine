@@ -35,13 +35,13 @@ const Quiz1 = () => {
     },
     {
       question: "What does As-Salam mean?",
-      options: ["The Provider", "The Creator", "The Source/Giver of Peace", "The Omnipotent"],
+      options: ["The Provider", "The Creator", "The Source of Peace", "The Omnipotent"],
       correctAnswer: "The Source/Giver of Peace",
     },
     {
       question: "What does As-Mu'min mean?",
-      options: ["The King", "The Subtle One", "The Source/Giver of Peace", "The Infuser of Faith"],
-      correctAnswer: "The Infuser of Faith",
+      options: ["The King", "The Subtle One", "The Source/Giver of Peace", "The Most Merciful"],
+      correctAnswer: "The Source/Giver of Peace",
     },
     {
       question: "Which name of Allah means 'The Gaurdian'?",
@@ -100,8 +100,8 @@ const Quiz1 = () => {
     },
     {
       question: "What does Al-Fattah mean?",
-      options: ["The Most Loving", "The Just", "The Fashioner", "The Supreme Solver/Reliever"],
-      correctAnswer: "The Supreme Solver/Reliever",
+      options: ["The Most Loving", "The Just", "The Fashioner", "The Supreme Solver"],
+      correctAnswer: "The Supreme Solver",
     },
     {
       question: "Which name of Allah means 'The All-Knowing'?",
@@ -177,7 +177,8 @@ const Quiz1 = () => {
   };
 
   const handleReturnToQuizzes = () => {
-    router.back();
+    router.push(`/quizzes`);
+    router.dismissAll();
   };
 
   const handleTryAgain = () => {

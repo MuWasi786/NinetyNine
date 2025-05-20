@@ -53,7 +53,7 @@ const TestYourself = () => {
             onPress={() => handleCategoryPress('1-24')}
             >
             <Image 
-                source={require('../../assets/flash/flash1.png')} 
+                source={require('../../assets/flash/flash2.png')} 
                 style={styles.buttonImage}
                 resizeMode="cover"
             />
@@ -64,7 +64,7 @@ const TestYourself = () => {
             onPress={() => handleCategoryPress('25-49')}
             >
             <Image 
-                source={require('../../assets/flash/flash2.png')} 
+                source={require('../../assets/flash/flash1.png')} 
                 style={styles.buttonImage}
                 resizeMode="cover"
             />

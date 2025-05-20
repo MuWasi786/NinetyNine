@@ -35,13 +35,13 @@ const Quiz5 = () => {
     },
     {
       question: "What does As-Salam mean?",
-      options: ["The Provider", "The Creator", "The Source/Giver of Peace", "The Omnipotent"],
+      options: ["The Provider", "The Creator", "The Source of Peace", "The Omnipotent"],
       correctAnswer: "The Source/Giver of Peace",
     },
     {
-      question: "What does Al-Mu'min mean?",
-      options: ["The King", "The Subtle One", "The Infuser of Faith", "The Most Merciful"],
-      correctAnswer: "The Infuser of Faith",
+      question: "What does As-Mu'min mean?",
+      options: ["The King", "The Subtle One", "The Source/Giver of Peace", "The Most Merciful"],
+      correctAnswer: "The Source/Giver of Peace",
     },
     {
       question: "Which name of Allah means 'The Gaurdian'?",
@@ -350,8 +350,8 @@ const Quiz5 = () => {
     },
     {
       question: "What is the meaning of As-Ṣamad?",
-      options: ["The Satisfier Of Needs", "The Gloriously Noble", "The Absolute Truth", "The Giver of Life"],
-      correctAnswer: "The Satisfier Of Needs",
+      options: ["The The Satisfier Of Needs", "The Gloriously Noble", "The Absolute Truth", "The Giver of Life"],
+      correctAnswer: "The The Satisfier Of Needs",
     },
     {
       question: "What is the meaning of Al-Qādir?",

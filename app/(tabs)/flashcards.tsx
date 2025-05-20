@@ -266,6 +266,19 @@ export default function Flashcards() {
         </TouchableOpacity>
       </View>
 
+      <View style={styles.continueContainer}>
+        <TouchableOpacity
+            onPress={() => {
+              router.replace('/something');
+            }}
+            style={styles.continueButton}
+            >
+            <Text style={styles.continueText}>
+              Continue reading in Home
+            </Text>
+        </TouchableOpacity>
+      </View>
+
       {/* Stats */}
       <View style={styles.statsContainer}>
         <Text style={styles.statsText}>
@@ -293,6 +306,7 @@ export default function Flashcards() {
         </TouchableOpacity>
       </View>
 
+
       {/* Exit */}
       <TouchableOpacity style={styles.exitButton} onPress={() => {
   router.replace('/testyourself'); // or use the correct path if different
@@ -305,6 +319,19 @@ export default function Flashcards() {
 }
 
 const styles = StyleSheet.create({
+  continueContainer: {
+    alignItems: 'center',
+    bottom: 54,
+  },
+  continueButton: {
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+  },
+  continueText: {
+    color: '#fff',
+    textDecorationLine: 'underline',
+    fontSize: 16,
+  },
   backgroundImage: {
     flex: 1,
     width: '100%',

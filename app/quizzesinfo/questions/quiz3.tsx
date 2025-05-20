@@ -41,7 +41,7 @@ const Quiz3 = () => {
     {
       question: "What is the meaning of Al-Waliyy?",
       options: ["The Governor/Friend", "The Creator of Death", "The All-Enumerating", "The Originator"],
-      correctAnswer: "The Governor/Friend",
+      correctAnswer: "The Governor",
     },
     {
       question: "What is the meaning of Al-Ḥamīd?",
@@ -96,12 +96,12 @@ const Quiz3 = () => {
     {
       question: "What is the meaning of Al-Wahid?",
       options: ["The Self-Existing", "The Indivisible, The Absolute One", "The Sustainer", "The All-Strong"],
-      correctAnswer: "The Indivisible, The Absolute One",
+      correctAnswer: "The One",
     },
     {
       question: "What is the meaning of Al-Aḥad?",
-      options: ["The Unique, The Only One", "The Self-Sufficient", "The Ever-Living", "The Absolute Truth"],
-      correctAnswer: "The Unique, The Only One",
+      options: ["The Indivisible, The Absolute One", "The Self-Sufficient", "The Ever-Living", "The Absolute Truth"],
+      correctAnswer: "The Indivisible, The Absolute One",
     },
     {
       question: "What is the meaning of As-Ṣamad?",

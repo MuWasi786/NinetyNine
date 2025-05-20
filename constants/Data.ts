@@ -178,7 +178,7 @@ export const topics: NameType[] = [
     title: "Al-Mutakabbir",
     description: "The Dominant One",
     meaning:
-      'Al-Mutakabbir highlights Allah’s supreme majesty and greatness. He is above all forms of need or dependency, deserving of all glory and reverence. The name Al-Mutakabbir comes from the root kabara — meaning greatness, nobility, and exaltation. Allah سُبْحَٰنَهُۥ وَتَعَٰلَىٰ is called Al-Mutakabbir, "The Supreme," "The Proud," or "The Dominant One," because His greatness is unmatched, and His majesty is far above all of creation. Everything else, no matter how powerful or impressive, is insignificant when compared to Him. Allah is the King of kings, the true Possessor of Pride, and we are merely His humble servants.',
+      'Al-Mutakabbir highlights Allah’s supreme majesty and greatness. He is above all forms of need or dependency, deserving of all glory and reverence. The name Al-Mutakabbir comes from the root kabara — meaning greatness, nobility, and exaltation. \n\n\nHis majesty is far above all of creation. Everything else, no matter how powerful or impressive, is insignificant when compared to Him. Allah is the King of kings, the true Possessor of Pride, and we are merely His humble servants.',
     scholarlyAnalysis:
       "Scholars such as Al-Tabarsi explain that Al-Mutakabbir reflects the absolute grandeur and majesty of Allah. This name calls for humility from believers, as they recognize that all pride and greatness belong solely to Allah. It serves as a reminder of Allah's exalted status and the reverence that is due to Him.",
     quran:
@@ -1311,7 +1311,7 @@ export const topics: NameType[] = [
     title: "Al-Muakhir",
     description: "The Delayer",
     meaning:
-      "Al-Mu'akhkhir refers to Allah's ability to delay or set back whatever He wills.\n\nAl-Mu’akhkhir complements Al-Muqaddim: where the Promoter brings forward, the Postponer defers. The first dimension of this name is God’s acting to push away and delay: just as He exalts some, He drives back others—whether through exile, withdrawal of support, or postponing their objectives. The disbelieving people of ʿĀd rejected their prophet and were thus “followed in this world with a curse and on the Day of Resurrection”—“Away with ʿĀd, the people of Hud!” (Qur’an 11:59-60). In the second dimension, Al-Mu’akhkhir refers to Divine decree in human affairs: although we may hasten toward an outcome, Allah postpones its fruition until He wills. That delay may be a test, purification, or simply part of His perfect wisdom. He “tests you with fear and hunger and loss of wealth, lives, and harvests” (2:155) and does “not burden a soul beyond its capacity” (2:286), reminding us that every postponement contains mercy and purpose.",
+      "Al-Mu'akhkhir refers to Allah's ability to delay or set back whatever He wills.\n\nAl-Mu’akhkhir complements Al-Muqaddim: where the Promoter brings forward, the Postponer defers. The first dimension of this name is God’s acting to push away and delay: just as He exalts some, He drives back others—whether by withdrawing support, or postponing objectives. The disbelieving people of ʿĀd rejected their prophet and were thus “followed in this world with a curse and on the Day of Resurrection”—“Away with ʿĀd, the people of Hud!” (Qur’an 11:59-60). In the second dimension, Al-Mu’akhkhir refers to Divine decree in human affairs: although we may hasten toward an outcome, Allah postpones its fruition until He wills. That delay may be a test, purification, or simply part of His perfect wisdom. He “tests you with fear and hunger and loss of wealth, lives, and harvests” (2:155) and does “not burden a soul beyond its capacity” (2:286), reminding us that every postponement contains mercy and purpose.",
     scholarlyAnalysis:
       "Ibn Kathir explains that Al-Mu'akhkhir signifies Allah's wisdom in delaying certain matters according to His divine plan. This name teaches believers patience and trust in Allah's timing, knowing that delay might be for their benefit.",
     quran:
@@ -1362,9 +1362,9 @@ export const topics: NameType[] = [
     title: "Adh-Dhaahir",
     description: "The Manifest",
     meaning:
-      "Az-Zahir describes Allah as the One who is manifest through His signs and creation.",
+      "Adh-Dhaahir describes Allah as the One who is manifest through His signs and creation.",
     scholarlyAnalysis:
-      "mam Al-Qurtubi notes that Az-Zahir implies Allah's clear manifestation through His creation and attributes. This name encourages believers to recognize Allah's signs in the universe and in their lives.",
+      "mam Al-Qurtubi notes that Adh-Dhaahir implies Allah's clear manifestation through His creation and attributes. This name encourages believers to recognize Allah's signs in the universe and in their lives.",
     quran:
       "هُوَ الۡاَوَّلُ وَالۡاٰخِرُ وَالظَّاهِرُ وَالۡبَاطِنُ​ۚ وَهُوَ بِكُلِّ شَىۡءٍ عَلِيۡمٌ‏ ",
     quranicReference:

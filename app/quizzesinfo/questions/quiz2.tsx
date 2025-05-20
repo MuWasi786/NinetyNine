@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { MaterialIcons } from '@expo/vector-icons';
 
-const Quiz1 = () => {
+const Quiz2 = () => {
   const router = useRouter();
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
@@ -14,124 +14,129 @@ const Quiz1 = () => {
 
   const questions = [
     {
-      question: "Which name of Allah means 'The Beneficent, The Most Gracious' ",
-      options: ["Ar-Rahman", "Al-Malik", "Al-Quddus", "Al-Aziz"],
-      correctAnswer: "Ar-Rahman",
+      question: "What is the meaning of Al-Muzil?",
+      options: ["The Humiliator", "The Glorious", "The All-Wise", "The Most Generous"],
+      correctAnswer: "The Humiliator",
     },
     {
-      question: "Which name of Allah means 'The Most Merciful'?",
-      options: ["As-Samad", "Ar-Rahim", "Al-Malik", "Al-Mu'min"],
-      correctAnswer: "Ar-Rahim",
+      question: "What is the meaning of As-Samī'?",
+      options: ["The All-Seeing", "The All-Hearing", "The Reckoner", "The Watchful"],
+      correctAnswer: "The All-Hearing",
     },
     {
-      question: "Al-Malik means?",
-      options: ["The Bestower", "The Most Merciful", "The King", "The Subtle One"],
-      correctAnswer: "The King",
+      question: "What is the meaning of Al-Basīr?",
+      options: ["The All-Wise", "The Most Forbearing", "The All-Seeing", "The Infuser of New Life"],
+      correctAnswer: "The All-Seeing",
     },
     {
-      question: "Which name of Allah means 'The Pure, The Holy, The Most Sacred'?",
-      options: ["Al-Jabbar", "Ar-Rahman", "Al-Quddus", "Al-Aziz"],
-      correctAnswer: "Al-Quddus",
+      question: "What is the meaning of Al-Hakam?",
+      options: ["The Watchful", "The Judge", "The Most Loving", "The Great Forgiver"],
+      correctAnswer: "The Judge",
     },
     {
-      question: "What does As-Salam mean?",
-      options: ["The Provider", "The Creator", "The Source/Giver of Peace", "The Omnipotent"],
-      correctAnswer: "The Source/Giver of Peace",
+      question: "What is the meaning of Al-'Adl?",
+      options: ["The Most Generous", "The Utterly Just", "The Majestic", "The Most High"],
+      correctAnswer: "The Utterly Just",
     },
     {
-      question: "What does As-Mu'min mean?",
-      options: ["The King", "The Subtle One", "The Source/Giver of Peace", "The Infuser of Faith"],
-      correctAnswer: "The Infuser of Faith",
+      question: "What is the meaning of Al-Latīf?",
+      options: ["The Most Gentle", "The Most Loving", "The Glorious", "The Reckoner"],
+      correctAnswer: "The Most Gentle",
     },
     {
-      question: "Which name of Allah means 'The Gaurdian'?",
-      options: ["Al-Wadud", "Al-Latif", "Al-Muhaymin", "Al-Malik"],
-      correctAnswer: "Al-Muhaymin",
+      question: "What is the meaning of Al-Khabīr?",
+      options: ["The Most Wise", "The All-Wise", "The Watchful", "The All-Aware"],
+      correctAnswer: "The All-Aware",
     },
     {
-      question: "Al-Aziz means?",
-      options: ["The Almighty", "The Sustainer", "The Patient One", "The All-Knowing"],
-      correctAnswer: "The Almighty",
+      question: "What is the meaning of Al-Halīm?",
+      options: ["The Impartial Judge", "The Most Forbearing", "The Most Great", "The Most High"],
+      correctAnswer: "The Most Forbearing",
     },
     {
-      question: "Which name of Allah means 'The Compeller'?",
-      options: ["Ar-Raheem", "Al-Karim", "Al-Jabbar", "Al-Hakim"],
-      correctAnswer: "Al-Jabbar",
+      question: "What is the meaning of Al-'Aẓīm?",
+      options: ["The Magnificent", "The Infuser of New Life", "The Great Forgiver", "The Sustainer"],
+      correctAnswer: "The Magnificent",
     },
     {
-      question: "What does Al-Mutakabbir mean?",
-      options: ["The Dominant One", "The Subtle One", "The Just", "The Generous"],
-      correctAnswer: "The Dominant One",
+      question: "What is the meaning of Al-Ghafūr?",
+      options: ["The All-Forgiving", "The Majestic", "The Most Loving", "The Most High"],
+      correctAnswer: "The All-Forgiving",
     },
     {
-      question: "Which name of Allah means 'The Creator'?",
-      options: ["Al-Wadud", "Al-Khaliq", "Al-Karim", "Ar-Razzaq"],
-      correctAnswer: "Al-Khaliq",
+      question: "What is the meaning of Ash-Shakūr?",
+      options: ["The Most Appreciative", "The Watchful", "The Most Loving", "The All-Wise"],
+      correctAnswer: "The Most Appreciative",
     },
     {
-      question: "Which name of Allah means 'The Evolver'?",
-      options: ["Al-Bari", "Ar-Rahim", "Al-Malik", "As-Salam"],
-      correctAnswer: "Al-Bari",
+      question: "What is the meaning of Al-'Aliyy?",
+      options: ["The Most High", "The Majestic", "The Glorious", "The All-Encompassing"],
+      correctAnswer: "The Most High",
     },
     {
-      question: "Which name of Allah means 'The Flawless Shaper/Fashioner'?",
-      options: ["Al-Musawwir", "Al-Khaliq", "Al-Malik", "Al-Quddus"],
-      correctAnswer: "Al-Musawwir",
+      question: "What is the meaning of Al-Kabīr?",
+      options: ["The Most Great", "The All-Aware", "The Infuser of New Life", "The Reckoner"],
+      correctAnswer: "The Most Great",
     },
     {
-      question: "What does Al-Ghaffar mean?",
-      options: ["The Most Merciful", "The Great Forgiver", "The Bestower", "The Strong"],
-      correctAnswer: "The Great Forgiver",
+      question: "What is the meaning of Al-Hafīẓ?",
+      options: ["The Preserver", "The Most Forbearing", "The Most Generous", "The Great Forgiver"],
+      correctAnswer: "The Preserver",
     },
     {
-      question: "Which name of Allah means 'The Supreme Bestower'?",
-      options: ["Al-Qahhar", "Al-Fattah", "Al-Wahhab", "Al-Mu'min"],
-      correctAnswer: "Al-Wahhab",
+      question: "What is the meaning of Al-Muqīt?",
+      options: ["The Sustainer", "The Majestic", "The Most High", "The Glorious"],
+      correctAnswer: "The Sustainer",
     },
     {
-      question: "Al-Razzaq means?",
-      options: ["The Preserver", "The Provider", "The Self-Sufficient", "The All-Knowing"],
-      correctAnswer: "The Provider",
+      question: "What is the meaning of Al-Hasīb?",
+      options: ["The Reckoner", "The Watchful", "The Impartial Judge", "The Great Forgiver"],
+      correctAnswer: "The Reckoner",
     },
     {
-      question: "Which name of Allah means 'The All-Prevailing'?",
-      options: ["Al-Karim", "Al-Qahhar", "Ar-Rahman", "Al-Wadud"],
-      correctAnswer: "Al-Qahhar",
+      question: "What is the meaning of Al-Jalīl?",
+      options: ["The Majestic", "The Most Generous", "The Watchful", "The Glorious"],
+      correctAnswer: "The Majestic",
     },
     {
-      question: "What does Al-Fattah mean?",
-      options: ["The Most Loving", "The Just", "The Fashioner", "The Supreme Solver/Reliever"],
-      correctAnswer: "The Supreme Solver/Reliever",
+      question: "What is the meaning of Al-Karīm?",
+      options: ["The Most Generous", "The All-Wise", "The Reckoner", "The Infuser of New Life"],
+      correctAnswer: "The Most Generous",
     },
     {
-      question: "Which name of Allah means 'The All-Knowing'?",
-      options: ["Al-Alim", "Al-Aziz", "Al-Hafiz", "As-Sami"],
-      correctAnswer: "Al-Alim",
+      question: "What is the meaning of Ar-Raqīb?",
+      options: ["The Watchful", "The Subtle One", "The Most Loving", "The All-Encompassing"],
+      correctAnswer: "The Watchful",
     },
     {
-      question: "Al-Qabid means?",
-      options: ["The Withholder", "The Witness", "The All-Seeing", "The Generous One"],
-      correctAnswer: "The Withholder",
+      question: "What is the meaning of Al-Mujīb?",
+      options: ["The Responsive One", "The Reckoner", "The Most Wise", "The Glorious"],
+      correctAnswer: "The Responsive One",
     },
     {
-      question: "Which name of Allah means 'The Extender'?",
-      options: ["Al-Karim", "Al-Rahim", "Al-Basit", "As-Sabur"],
-      correctAnswer: "Al-Basit",
+      question: "What is the meaning of Al-Wāsi'?",
+      options: ["The All-Encompassing", "The Most Generous", "The Most Forbearing", "The Infuser of New Life"],
+      correctAnswer: "The All-Encompassing",
     },
     {
-      question: "What does Al-Khafid mean?",
-      options: ["The Strong", "The Light", "The Subtle One", "The Reducer"],
-      correctAnswer: "The Reducer",
+      question: "What is the meaning of Al-Hakīm?",
+      options: ["The Most Wise", "The Impartial Judge", "The Most Loving", "The All-Aware"],
+      correctAnswer: "The Most Wise",
     },
     {
-      question: "Which name of Allah means 'The Exalter'?",
-      options: ["Ar-Rafi", "Al-Hakam", "Al-Malik", "Al-Jabbar"],
-      correctAnswer: "Ar-Rafi",
+      question: "What is the meaning of Al-Wadūd?",
+      options: ["The Most Loving", "The Most Forbearing", "The Glorious", "The Infuser of New Life"],
+      correctAnswer: "The Most Loving",
     },
     {
-      question: "Al-Mu'izz means?",
-      options: ["The Omnipotent", "The Honourer", "The Preserver", "The Subtle One"],
-      correctAnswer: "The Honourer",
+      question: "What is the meaning of Al-Majīd?",
+      options: ["The Glorious", "The Great Forgiver", "The Reckoner", "The Most High"],
+      correctAnswer: "The Glorious",
+    },
+    {
+      question: "What is the meaning of Al-Bā'ith?",
+      options: ["The Resurrector", "The Reckoner", "The Most Wise", "The All-Aware"],
+      correctAnswer: "The Resurrector",
     },
   ];
 
@@ -318,7 +323,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 20,
     color: '#ad8b1b'
-    // original blue: #17457a
   },
   percentageText: {
     fontSize: 24,
@@ -349,4 +353,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Quiz1;
+export default Quiz2;

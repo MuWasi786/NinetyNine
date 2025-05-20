@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { MaterialIcons } from '@expo/vector-icons';
 
-const Quiz3 = () => {
+const Quiz4 = () => {
   const router = useRouter();
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
@@ -14,129 +14,129 @@ const Quiz3 = () => {
 
   const questions = [
     {
-      question: "What is the meaning of Ash-Shahīd?",
-      options: ["The Ever-Living", "The All-Observing Witness", "The Most Praiseworthy", "The One"],
-      correctAnswer: "The All-Observing Witness",
+      question: "What is the meaning of Aẓ-Ẓāhir?",
+      options: ["The Hidden One", "The Protecting Friend", "The Manifest", "The Supreme One"],
+      correctAnswer: "The Manifest",
     },
     {
-      question: "What is the meaning of Al-Ḥaqq?",
-      options: ["The Absolute Truth", "The Creator of Death", "The Solely Loyal", "The Gloriously Noble"],
-      correctAnswer: "The Absolute Truth",
+      question: "What is the meaning of Al-Bāṭin?",
+      options: ["The Hidden One", "The Source/ Doer of All Goodness", "The Ever-Pardoning", "The Manifest"],
+      correctAnswer: "The Hidden One",
     },
     {
-      question: "What is the meaning of Al-Wakīl?",
-      options: ["The Disposer of Affairs", "The All-Strong", "The Sustainer", "The Most Praiseworthy"],
-      correctAnswer: "The Disposer of Affairs",
+      question: "What is the meaning of Al-Wālī?",
+      options: ["The Supreme One", "The Protecting Friend", "The Light", "The Enricher"],
+      correctAnswer: "The Protecting Friend",
     },
     {
-      question: "What is the meaning of Al-Qawwī?",
-      options: ["The Firm One", "The All-Strong", "The Creator of All Power", "The Ever-Living"],
-      correctAnswer: "The All-Strong",
+      question: "What is the meaning of Al-Muta'ālī?",
+      options: ["The Most Kind", "The Supreme One", "The Ever-Pardoning", "The Just One"],
+      correctAnswer: "The Supreme One",
     },
     {
-      question: "What is the meaning of Al-Matīn?",
-      options: ["The Forceful One", "The Sustainer", "The All-and-Ever Witnessing", "The One"],
-      correctAnswer: "The Forceful One",
+      question: "What is the meaning of Al-Barr?",
+      options: ["The Source/ Doer of All Goodness", "The Inheritor of All", "The Benefactor", "The Guide"],
+      correctAnswer: "The Source/ Doer of All Goodness",
     },
     {
-      question: "What is the meaning of Al-Waliyy?",
-      options: ["The Governor/Friend", "The Creator of Death", "The All-Enumerating", "The Originator"],
-      correctAnswer: "The Governor/Friend",
+      question: "What is the meaning of At-Tawwāb?",
+      options: ["The Ever-Pardoning", "The Withholder", "The Most Patient", "The Omnipotent"],
+      correctAnswer: "The Ever-Pardoning",
     },
     {
-      question: "What is the meaning of Al-Ḥamīd?",
-      options: ["The Most Praiseworthy", "The One", "The Gloriously Noble", "The Absolute Truth"],
-      correctAnswer: "The Most Praiseworthy",
+      question: "What is the meaning of Al-Muntaqim?",
+      options: ["The Most Patient", "The Avenger", "The Hidden One", "The Originator"],
+      correctAnswer: "The Avenger",
     },
     {
-      question: "What is the meaning of Al-Muḥṣī?",
-      options: ["The All-Enumerating", "The Most Praiseworthy", "The Gloriously Noble", "The Creator of All Power"],
-      correctAnswer: "The All-Enumerating",
+      question: "What is the meaning of Al-'Afuww?",
+      options: ["The Forgiver", "The Omnipotent", "The Creator of Death", "The Absolute Truth"],
+      correctAnswer: "The Forgiver",
     },
     {
-      question: "What is the meaning of Al-Mubdi'?",
-      options: ["The Originator", "The Most Praiseworthy", "The Firm One", "The All-Strong"],
+      question: "What is the meaning of Ar-Ra'ūf?",
+      options: ["The Guide", "The Most Kind", "The One", "The Avenger"],
+      correctAnswer: "The Most Kind",
+    },
+    {
+      question: "What is the meaning of Mālik-ul-Mulk?",
+      options: ["Master of the Kingdom/Owner of All", "The Inheritor of All", "The Gloriously Noble", "The Expediter"],
+      correctAnswer: "Master of the Kingdom/Owner of All",
+    },
+    {
+      question: "What is the meaning of Dhū-l-Jalāli wa-l-Ikrām?",
+      options: ["The Lord of Majesty and Bounty", "The Self-Sufficient", "The Most Kind", "The One"],
+      correctAnswer: "The Lord of Majesty and Bounty",
+    },
+    {
+      question: "What is the meaning of Al-Muqsiṭ?",
+      options: ["The Just One", "The Omnipotent", "The Perceiver", "The Restorer"],
+      correctAnswer: "The Just One",
+    },
+    {
+      question: "What is the meaning of Al-Jāmi'?",
+      options: ["The Giver of Life", "The Gatherer", "The All-Strong", "The Absolute Truth"],
+      correctAnswer: "The Gatherer",
+    },
+    {
+      question: "What is the meaning of Al-Ghanīyy?",
+      options: ["The Self-Sufficient", "The Firm One", "The Restorer", "The Sustainer"],
+      correctAnswer: "The Self-Sufficient",
+    },
+    {
+      question: "What is the meaning of Al-Mughni?",
+      options: ["The Enricher", "The Light", "The Perceiver", "The Withholder"],
+      correctAnswer: "The Enricher",
+    },
+    {
+      question: "What is the meaning of Al-Māni'?",
+      options: ["The Withholder", "The One", "The Absolute Truth", "The Sustainer"],
+      correctAnswer: "The Withholder",
+    },
+    {
+      question: "What is the meaning of Aḍ-Ḍārr?",
+      options: ["The Distresser", "The Creator of Death", "The Light", "The Gloriously Noble"],
+      correctAnswer: "The Distresser",
+    },
+    {
+      question: "What is the meaning of An-Nāfi'?",
+      options: ["The Propitious/ Benefactor", "The Ever-Living", "The Expediter", "The Delayer"],
+      correctAnswer: "The Propitious/ Benefactor",
+    },
+    {
+      question: "What is the meaning of An-Nūr?",
+      options: ["The Guide", "The Light", "The Inheritor of All", "The Just One"],
+      correctAnswer: "The Light",
+    },
+    {
+      question: "What is the meaning of Al-Hādī?",
+      options: ["The Guide", "The Originator", "The First", "The Creator of All Power"],
+      correctAnswer: "The Guide",
+    },
+    {
+      question: "What is the meaning of Al-Badī'?",
+      options: ["The Originator", "The One", "The Last", "The Supreme One"],
       correctAnswer: "The Originator",
     },
     {
-      question: "What is the meaning of Al-Mu'īd?",
-      options: ["The Restorer", "The Ever-Living", "The Absolute Truth", "The One"],
-      correctAnswer: "The Restorer",
+      question: "What is the meaning of Al-Bāqī?",
+      options: ["The Everlasting", "The Firm One", "The Perceiver", "The Indivisible, The Absolute One"],
+      correctAnswer: "The Everlasting",
     },
     {
-      question: "What is the meaning of Al-Muḥyī?",
-      options: ["The Giver of Life", "The All-Enumerating", "The Sustainer", "The Most Praiseworthy"],
-      correctAnswer: "The Giver of Life",
+      question: "What is the meaning of Al-Wārith?",
+      options: ["The Inheritor of All", "The Most Kind", "The Gatherer", "The Most Praiseworthy"],
+      correctAnswer: "The Inheritor of All",
     },
     {
-      question: "What is the meaning of Al-Mumīt?",
-      options: ["The Inflicter of Death", "The Restorer", "The Perceiver", "The All-Strong"],
-      correctAnswer: "The Inflicter of Death",
+      question: "What is the meaning of Ar-Rashīd?",
+      options: ["The Guide, Infallible Teacher", "The Ever-Pardoning", "The One", "The Indivisible, The Absolute One"],
+      correctAnswer: "The Guide, Infallible Teacher",
     },
     {
-      question: "What is the meaning of Al-Ḥayy?",
-      options: ["The Ever-Living", "The Gloriously Noble", "The Sustainer", "The Originator"],
-      correctAnswer: "The Ever-Living",
-    },
-    {
-      question: "What is the meaning of Al-Qayyūm?",
-      options: ["The All Knowing", "The One", "The Self-Existing One", "The Giver of Life"],
-      correctAnswer: "The Self-Existing One",
-    },
-    {
-      question: "What is the meaning of Al-Wājid?",
-      options: ["The Perceiver", "The First", "The Gloriously Noble", "The Self-Sufficient"],
-      correctAnswer: "The Perceiver",
-    },
-    {
-      question: "What is the meaning of Al-Mājid?",
-      options: ["The Glorious", "The Self-Sufficient", "The Creator of Death", "The All-Strong"],
-      correctAnswer: "The Glorious",
-    },
-    {
-      question: "What is the meaning of Al-Wahid?",
-      options: ["The Self-Existing", "The Indivisible, The Absolute One", "The Sustainer", "The All-Strong"],
-      correctAnswer: "The Indivisible, The Absolute One",
-    },
-    {
-      question: "What is the meaning of Al-Aḥad?",
-      options: ["The Unique, The Only One", "The Self-Sufficient", "The Ever-Living", "The Absolute Truth"],
-      correctAnswer: "The Unique, The Only One",
-    },
-    {
-      question: "What is the meaning of As-Ṣamad?",
-      options: ["The Satisfier Of Needs", "The Gloriously Noble", "The Absolute Truth", "The Giver of Life"],
-      correctAnswer: "The Satisfier Of Needs",
-    },
-    {
-      question: "What is the meaning of Al-Qādir?",
-      options: ["The Omnipotent", "The Restorer", "The One", "The Absolute Truth"],
-      correctAnswer: "The Omnipotent",
-    },
-    {
-      question: "What is the meaning of Al-Muqtadir?",
-      options: ["The Powerful", "The Perceiver", "The All-Enumerating", "The Giver of Life"],
-      correctAnswer: "The Powerful",
-    },
-    {
-      question: "What is the meaning of Al-Muqaddim?",
-      options: ["The Promoter", "The Gloriously Noble", "The All-and-Ever Witnessing", "The Firm One"],
-      correctAnswer: "The Promoter",
-    },
-    {
-      question: "What is the meaning of Al-Mu'akhkhir?",
-      options: ["The Delayer", "The Creator of All Power", "The Giver of Life", "The Most Praiseworthy"],
-      correctAnswer: "The Delayer",
-    },
-    {
-      question: "What is the meaning of Al-Awwal?",
-      options: ["The First", "The Self-Sufficient", "The Gloriously Noble", "The One"],
-      correctAnswer: "The First",
-    },
-    {
-      question: "What is the meaning of Al-Ākhir?",
-      options: ["The Last", "The Perceiver", "The Restorer", "The Gloriously Noble"],
-      correctAnswer: "The Last",
+      question: "What is the meaning of Aṣ-Ṣabūr?",
+      options: ["The Most Patient", "The Self-Sufficient", "The Omnipotent", "The Creator of Death"],
+      correctAnswer: "The Most Patient",
     },
   ];
 
@@ -339,4 +339,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Quiz3;
+export default Quiz4;
