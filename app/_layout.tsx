@@ -1,4 +1,5 @@
 import { Slot, Stack } from 'expo-router';
+import 'whatwg-fetch';
 
 //This file tells us how to navigate between screens!
 
@@ -6,7 +7,7 @@ export default function RootLayout() { //root layout component, wraps the naviga
     return(
         <Stack> {/* this defines navigable screens */}
 
-            {/* User going to the tabs route, dont show header */}
+            {/* User going to the tabs route, dont show hear */}
             <Stack.Screen name="(tabs)" options={{ headerShown: false}}/>
             <Stack.Screen name="index" options={{ headerShown: false}}/>
             <Stack.Screen name="nameDetails/[id]" options={{ headerShown: false }} />

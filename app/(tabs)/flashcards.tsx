@@ -321,7 +321,7 @@ export default function Flashcards() {
 const styles = StyleSheet.create({
   continueContainer: {
     alignItems: 'center',
-    bottom: 54,
+    bottom: 35,
   },
   continueButton: {
     paddingHorizontal: 12,
