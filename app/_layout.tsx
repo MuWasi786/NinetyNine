@@ -1,9 +1,30 @@
 import { Slot, Stack } from 'expo-router';
 import 'whatwg-fetch';
+import * as Font from 'expo-font';
+import { useEffect, useState } from 'react';
+import { View, ActivityIndicator } from 'react-native';
 
 //This file tells us how to navigate between screens!
 
 export default function RootLayout() { //root layout component, wraps the navigation
+
+
+    const [fontsLoaded, setFontsLoaded] = useState(false);
+
+  useEffect(() => {
+    Font.loadAsync({
+      'QuranFont': require('../assets/fonts/Quran-Regular.ttf'), // ✅ Adjust path as needed
+    }).then(() => setFontsLoaded(true));
+  }, []);
+
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" />
+      </View>
+    );
+  }
+
     return(
         <Stack> {/* this defines navigable screens */}
 

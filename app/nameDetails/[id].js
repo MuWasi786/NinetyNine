@@ -238,13 +238,12 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
     },
     quran: {
+        fontFamily: 'QuranFont',
         fontSize: 20,
         textAlign: 'center',
         paddingBottom: 15,
         paddingTop: 5,
-        flexWrap: 'wrap',
-        flexShrink: 1,
-        maxWidth: '90%',
+        maxWidth: '100%',
         lineHeight: 35,
     },
     hadithText: {

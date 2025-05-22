@@ -16,10 +16,10 @@ const ListenAlong = () => {
 
     // Add text content for each icon
     const iconTextMapping = {
-    1: "Ar-Rahman - The Beneficent, The Most Merciful",
+    1: "Ar-Rahman - The Beneficent",
     2: "Ar-Rahim - The Merciful",
     3: "Al-Malik - The King",
-    4: "Al-Quddus - The Most Sacred, The Most Pure",
+    4: "Al-Quddus - The Most Sacred/Pure",
     5: "As-Salam - The Giver Of Peace",
     6: "Al-Mumin - The Infuser Of Faith",
     7: "Al-Muhaymin - The Guardian",
@@ -304,27 +304,33 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        position: 'relative', // Added to establish positioning context
+        width: '100%',
     },
     icon: {
         width: 300,
         height: 300,
         position: 'absolute',
-        top: '50%',
-        transform: [{ translateY: -150 }], // Half of icon height
+        zIndex: 1
     },
     textContainer: {
-        marginTop: 370, // Match icon height
-        padding: 10,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        borderRadius: 8,
-        maxWidth: '80%',
-    },
+    marginTop: 370,
+    padding: 15,
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    borderRadius: 10,
+    alignSelf: 'center',
+    width: '80%',
+    maxWidth: '90%', // Changed from fixed width to maxWidth for better responsiveness
+    minWidth: '70%', 
+},
     iconText: {
-        color: '#fff',
-        fontSize: 18,
-        textAlign: 'center',
-        fontWeight: 'bold',
-    },
+    color: '#fff',
+    fontSize: 18,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    flexWrap: 'wrap',
+    lineHeight: 24,
+},
     buttonContainer: {
         flexDirection: 'row',
         width: '100%',
@@ -356,8 +362,8 @@ const styles = StyleSheet.create({
         height: 270,
         borderRadius: 160,         // make it a circle 
         backgroundColor: '#fff',   // white background 
-        top: '55.5%',
-        transform: [{ translateY: -162 }],
+        // top: '55.5%',
+        // transform: [{ translateY: -162 }],
         justifyContent: 'center',
         alignItems: 'center',
         
